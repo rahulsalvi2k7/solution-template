@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageId>Business.Microservice.Template</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Rahul Salvi</Authors>
+    <Description>Starter template for layered business microservices using ASP.NET Core and .NET 8.</Description>
+    <PackageTags>dotnet-new;templates;microservice;aspnetcore;csharp</PackageTags>
+    <TargetFramework>net8.0</TargetFramework>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <PackageProjectUrl>https://github.com/rahulsalvi2k7/solution-template</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rahulsalvi2k7/solution-template</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="**/*"
+             Exclude="**/bin/**;**/obj/**;**/.git/**;**/.vs/**;**/*.user;**/*.suo;**/*.tmp;**/*.nupkg;**/*.log;**/packages/**;**/TestResults/**;SolutionTemplate.Template.csproj" />
+    <Compile Remove="**/*" />
+    <EmbeddedResource Remove="**/*" />
+    <None Remove="**/*" />
+  </ItemGroup>
+</Project>

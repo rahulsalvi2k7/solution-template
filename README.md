@@ -32,3 +32,36 @@ Use this template as a foundation for new services or APIs that need:
 - Architecture style: layered / clean-architecture inspired structure
 
 This template is intentionally lightweight at the start, but it is structured so new features can be added in a consistent way as the solution grows.
+
+## Use this solution template from NuGet
+
+To install the packaged template locally from the generated NuGet package:
+
+```bash
+dotnet new install ./bin/Release/Business.Microservice.Template.1.0.0.nupkg
+```
+
+To create a new solution from the installed template:
+
+```bash
+dotnet new business-microservice -n My.New.Service
+```
+
+To update the local installation later, re-pack and reinstall the package:
+
+```bash
+dotnet pack SolutionTemplate.Template.csproj -c Release
+dotnet new install ./bin/Release/Business.Microservice.Template.1.0.0.nupkg
+```
+
+If you need to remove an old local template install, use:
+
+```bash
+dotnet new uninstall Business.Microservice.Template
+```
+
+## Template customization tips
+
+- Rename the solution and project names after scaffolding to match the business domain.
+- Keep the layered structure intact for new features.
+- Add domain-specific endpoints, services, entities, and tests in the respective projects.

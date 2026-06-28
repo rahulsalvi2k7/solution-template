@@ -1,10 +1,11 @@
 namespace Business.Integration.Tests
 {
-    public class Tests
+    public class FeatureTests
     {
         [SetUp]
         public void Setup()
         {
+            
         }
 
         [Test]
