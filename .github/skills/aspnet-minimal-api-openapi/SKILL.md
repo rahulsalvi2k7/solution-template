@@ -13,6 +13,12 @@ Your goal is to help me create well-structured ASP.NET Minimal API endpoints wit
 - Use endpoint filters for cross-cutting concerns
 - Structure larger APIs with separate endpoint classes
 - Consider using a feature-based folder structure for complex APIs
+- Use `MapGet`, `MapPost`, `MapPut`, and `MapDelete` for defining endpoints
+- Use `WithName()` to provide operation IDs for OpenAPI documentation
+- Use `WithTags()` to categorize endpoints in OpenAPI documentation
+- Use `WithOpenApi()` to customize OpenAPI documentation for specific endpoints
+- Use one method per endpoint to keep the code clean and maintainable
+- Inject Repositories or Services into endpoint methods for data access and business logic
 
 ## Request and Response Types
 
