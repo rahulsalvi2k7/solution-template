@@ -2,7 +2,7 @@
   <PropertyGroup>
     <PackageType>Template</PackageType>
     <PackageId>Business.Microservice.Template</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>Rahul Salvi</Authors>
     <Description>Starter template for layered business microservices using ASP.NET Core and .NET 8.</Description>
     <PackageTags>dotnet-new;templates;microservice;aspnetcore;csharp</PackageTags>

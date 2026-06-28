@@ -1,4 +1,4 @@
-namespace BusinessService.Unit.Tests
+namespace Business.Service.Unit.Tests
 {
     public class Tests
     {

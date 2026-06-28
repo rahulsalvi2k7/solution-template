@@ -38,7 +38,7 @@ This template is intentionally lightweight at the start, but it is structured so
 To install the packaged template locally from the generated NuGet package:
 
 ```bash
-dotnet new install ./bin/Release/Business.Microservice.Template.1.0.0.nupkg
+dotnet new install ./bin/Release/Business.Microservice.Template.1.0.1.nupkg
 ```
 
 To create a new solution from the installed template:
@@ -51,7 +51,7 @@ To update the local installation later, re-pack and reinstall the package:
 
 ```bash
 dotnet pack SolutionTemplate.Template.csproj -c Release
-dotnet new install ./bin/Release/Business.Microservice.Template.1.0.0.nupkg
+dotnet new install ./bin/Release/Business.Microservice.Template.1.0.1.nupkg
 ```
 
 If you need to remove an old local template install, use:
